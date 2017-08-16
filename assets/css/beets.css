@@ -1,0 +1,92 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    display: block;
+    position: relative;
+    background: #fff;
+    z-index: 100;
+    padding: 15px;
+    border-bottom: 2px solid #e1e1e1;
+    box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    position: relative;
+}
+
+object#logo {
+    display: inline-block;
+    max-height: 45px;
+    height: 70%;
+    margin: 5px;
+}
+
+header .links {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -21px;
+}
+header .links .divider {
+    display: inline-block;
+    border-right: 1px solid #e1e1e1;
+    height: 20px;
+    width: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+}
+header .links a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #000;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+header .links a.login {
+    opacity: 0.5;
+}
+
+
+header .links a:hover {
+    background: #000;
+    cursor: pointer !important;
+    color: #fff;
+    opacity: 1;
+}
+.splash {
+    width: 100%;
+    min-height: 900px;
+    background: #e4e4e4; /* Old browsers */
+    background: -moz-linear-gradient(top, #e4e4e4 0%, #fefefe 32%, #d0d0d0 58%, #d0d0d0 58%, #e6e6e6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e4e4e4 0%,#fefefe 32%,#d0d0d0 58%,#d0d0d0 58%,#e6e6e6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e4e4e4 0%,#fefefe 32%,#d0d0d0 58%,#d0d0d0 58%,#e6e6e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+}
+.splash .phone-container {
+    position: relative;
+    top: 100px;
+    width: 387px;
+    margin: auto;
+    zoom: 0.6;
+}
+
+.splash .phone {
+    position: absolute;
+    width: 387px;
+    height: 791px;
+}
+
+.splash .phone-backer {
+    background: url('/assets/img/phone_p24.png') no-repeat center;
+}
+.splash .mobile {
+    background: url('/assets/img/mobile_p24.png') no-repeat center;
+}
