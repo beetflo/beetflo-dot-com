@@ -140,7 +140,7 @@ header .links a:hover {
     }
 }
 
-@media(max-width: 660px) {
+@media(max-width: 740px) {
     .splash #intro-text {
         left: 420px;
     }
@@ -149,7 +149,7 @@ header .links a:hover {
     }
 }
 
-@media(max-width: 585px) {
+@media(max-width: 660px) {
     .splash .keyboard,
     .splash .cabling,
     #intro-text {
