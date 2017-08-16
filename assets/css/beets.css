@@ -72,10 +72,11 @@ header .links a:hover {
 }
 .splash .phone-container {
     position: relative;
-    top: 100px;
+    top: 80px;
     width: 387px;
     margin: auto;
-    zoom: 0.6;
+    margin-left: 10px;
+    transform: scale(0.6);
 }
 
 .splash .phone {
@@ -85,8 +86,79 @@ header .links a:hover {
 }
 
 .splash .phone-backer {
-    background: url('/assets/img/phone_p24.png') no-repeat center;
+    background: url('/assets/img/phone_p8.png') no-repeat center;
 }
 .splash .mobile {
-    background: url('/assets/img/mobile_p24.png') no-repeat center;
+    background: url('/assets/img/mobile_p8.png') no-repeat center;
+}
+#intro-text {
+    min-width: 600px;
+    position: absolute;
+    z-index: 100;
+    left: 450px;
+    top: 90px;
+}
+#intro-text p {
+    display: block;
+}
+#intro-text .heading {
+    font-family: 'Nunito', sans-serif;
+    font-size: 44px;
+}
+
+#intro-text .sub {
+    font-size: 24px;
+}
+
+#intro-text strong {
+    font-weight: 700;
+}
+
+.phone-container .cabling {
+    background: url('/assets/img/cable_step_1p8.png') no-repeat center;
+    position: absolute;
+    height: 598px;
+    width: 580px;
+    left: 120px;
+    top: 420px;
+    z-index: 50;
+}
+.phone-container .keyboard {
+    background: url('/assets/img/keyboard_p8.png') no-repeat center;
+    position: absolute;
+    height: 281px;
+    width: 422px;
+    left: 410px;
+    top: 304px;
+    z-index: 25;
+}
+
+@media(min-width: 767px) {
+    .splash .phone-container {
+        margin: auto;
+        left: -205px;
+    }
+}
+
+@media(max-width: 660px) {
+    .splash #intro-text {
+        left: 420px;
+    }
+    .splash #intro-text .heading {
+        width: 350px;
+    }
+}
+
+@media(max-width: 585px) {
+    .splash .keyboard,
+    .splash .cabling,
+    #intro-text {
+        display: none;
+    }
+    .phone-container {
+        margin: auto !important;
+        transform: scale(0.85) !important;
+        transition: transform 0.2s ease-in;
+        -webkit-transition: transform 0.2s ease-in;
+    }
 }
