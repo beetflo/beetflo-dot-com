@@ -4,6 +4,28 @@ html,body {
     width: 100%;
     font-family: 'Nunito', sans-serif;
 }
+.logo {
+    position: relative;
+    height: 50px;
+    width: 200px;
+}
+
+.logo .sigil {
+    position: absolute;
+    left: 0;
+    color: #fff !important;
+    height: 40px !important;
+}
+
+.logo .logo-text {
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
 
 header {
     display: block;
@@ -19,7 +41,7 @@ header .container {
     position: relative;
 }
 
-object#logo {
+object.sigil {
     display: inline-block;
     max-height: 45px;
     height: 70%;
@@ -87,10 +109,10 @@ header .links a:hover {
 }
 
 .splash .phone-backer {
-    background: url('/assets/img/phone_p8.png') no-repeat center;
+    background: url('/public/img/phone_p8.png') no-repeat center;
 }
 .splash .mobile {
-    background: url('/assets/img/mobile_p8.png') no-repeat center;
+    background: url('/public/img/mobile_p8.png') no-repeat center;
 }
 #intro-text {
     min-width: 600px;
@@ -116,7 +138,7 @@ header .links a:hover {
 }
 
 .phone-container .cabling {
-    background: url('/assets/img/cable_step_1p8.png') no-repeat center;
+    background: url('/public/img/cable_step_1p8.png') no-repeat center;
     position: absolute;
     height: 598px;
     width: 580px;
@@ -125,7 +147,7 @@ header .links a:hover {
     z-index: 50;
 }
 .phone-container .keyboard {
-    background: url('/assets/img/keyboard_p8.png') no-repeat center;
+    background: url('/public/img/keyboard_p8.png') no-repeat center;
     position: absolute;
     height: 281px;
     width: 422px;
@@ -141,17 +163,12 @@ section.beta {
 }
 
 footer {
-    background: #3f2f56 url("/assets/img/footer.jpg") center;
+    background: #3f2f56 url("/public/img/footer.jpg") center;
     color: #fff;
     width: 100%;
     height: 200px;
     padding: 60px 30px;
     font-family: 'Nunito', sans-serif;
-}
-
-footer .logo {
-    color: #fff !important;
-    height: 40px !important;
 }
 
 footer .left {
@@ -169,7 +186,7 @@ footer .left .copyright {
 footer .right {
     float: right;
     font-size: 20px;
-    padding: 10px 0;
+    padding: 14px 0;
     font-weight: 100;
     text-align: right;
 }
@@ -266,6 +283,11 @@ button.become:hover .inner {
         height: auto;
         text-align: center;
     }
+
+    footer .logo {
+        margin: auto;
+    }
+
     footer .left,
     footer .right { width: 100%; text-align: center; }
 }

@@ -5,29 +5,31 @@
         <meta name="author" content="Bailey Cosier">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>beetflo</title>
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/css/beets.css">
+        <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/public/css/beets.css">
         <meta property="og:title" content="beetflo">
         <meta property="og:site_name" content="beetflo">
         <meta property="og:type" content="website">
         <meta property="og:description" content="Mobile midi workstation">
-        <meta property="og:image" content="/assets/img/og/beetflo-logo.jpg">
+        <meta property="og:image" content="/public/img/og/beetflo-logo.jpg">
         <meta property="og:url" content="https://beetflo.com/">
         <link href="https://fonts.googleapis.com/css?family=Nunito:300,700" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-<link rel="manifest" href="/favicons/manifest.json">
-<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
-
+        <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/public/favicons/manifest.json">
+        <link rel="mask-icon" href="/public/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
         <header>
             <div class='container'>
-                <object id="logo" type="image/svg+xml" data="/assets/img/beetflo_logo_typo.svg">
-                    <param name="src" value="/assets/img/beetflo_logo.png">
-                </object>
+                <div class='logo'>
+                    <object class="sigil" type="image/svg+xml" data="/public/img/beetflo_logo_black.svg">
+                        <param name="src" value="/public/img/beetflo_logo_black_small.png">
+                    </object>
+                    <div class='logo-text'>beetflo</div>
+                </div>
                 <div class='links'>
                     <a href='#/beta' class='beta'>Beta Signup</a>
                     <div class='divider'></div>
@@ -63,7 +65,7 @@
             </p>
 
             <p class='cross'>
-                Available on <strong>Android</strong>, 
+                Available on <strong>Android</strong>,
                 <strong>iOS</strong>, <strong>Windows</strong>, <strong>Mac</strong>, and of course — <strong>Linux</strong>.
 
                 <button class='become'>
@@ -75,9 +77,12 @@
         <footer>
             <div class='container'>
                 <div class='left'>
-                    <object stroke="#ffffff" class="logo" type="image/svg+xml" data="/assets/img/beetflo_logo_white.svg">
-                        <param name="src" value="/assets/img/beetflo_logo.png">
-                    </object>
+                    <div class='logo'>
+                        <object stroke="#ffffff" class="sigil" type="image/svg+xml" data="/public/img/beetflo_logo_white.svg">
+                            <param name="src" value="/public/img/beetflo_logo_white_small.png">
+                        </object>
+                        <div class='logo-text'>beetflo</div>
+                    </div>
                     <div class='copyright'>
                         © Copyright Beetflo, 2017. All Rights Reserved.
                     </div>
@@ -89,9 +94,8 @@
             </div>
         </footer>
 
-
-        <script src="/assets/js/jquery-3.2.1.slim.min.js"></script>
-        <script src="/assets/js/bootstrap.min.js"></script>
-        <script src="/assets/js/beets.js"></script>
+        <script src="/public/js/jquery-3.2.1.slim.min.js"></script>
+        <script src="/public/js/bootstrap.min.js"></script>
+        <script src="/public/js/beets.js"></script>
     </body>
 </html>
