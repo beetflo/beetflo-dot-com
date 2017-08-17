@@ -286,19 +286,23 @@ header .links a:hover {
 
 /******************************************/
 .m1 .l1 {
-    animation: 3s infinite alternate m1-l1;
+    animation: 3s infinite m1-l1;
+    animation-timing-function: ease-in-out;
 }
 
 .m1 .l2 {
-    animation: 3s infinite alternate m1-l2;
+    animation: 3s infinite m1-l2;
+    animation-timing-function: ease-in-out;
 }
 
 .m1 .l3 {
-    animation: 3s infinite alternate m1-l3;
+    animation: 3s infinite m1-l3;
+    animation-timing-function: ease-in-out;
 }
 
 .m1 .l4 {
-    animation: 3s infinite alternate m1-l4;
+    animation: 3s infinite m1-l4;
+    animation-timing-function: ease-in-out;
 }
 
 /******************************************/
@@ -624,6 +628,7 @@ button.become:hover .inner {
         top: 40px;
         left: 10px;
         text-align: center;
+        width: auto;
     }
     .splash .stores img {
         margin-left: auto;
