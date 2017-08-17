@@ -144,7 +144,7 @@ header .links a:hover {
 }
 
 .cabling {
-    background: url('/public/img/cable_step_1p24.png') no-repeat center;
+    background: url('/public/img/cable_step_1p24_faded.png') no-repeat center;
     position: absolute;
     height: 381px;
     width: 338px;
