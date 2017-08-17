@@ -170,6 +170,7 @@ header .links a:hover {
     left: 120px;
     text-align: right;
     z-index: 100;
+    width: 170px;
 }
 
 .splash .stores img {
@@ -287,6 +288,9 @@ section.devices span {
     border-radius: 0px;
 }
 
+section.devices .heading span {
+    border-bottom: 2px solid #fff;
+}
 section.devices .mini span {
     background-color: rgba(199,54,113,1);
 }
@@ -318,7 +322,8 @@ button.become .inner {
     height: 50px;
     background: #ff7e00;
     color: #fff;
-    padding: 15px;
+    padding: 12px 15px;
+    text-transform: uppercase;
 }
 
 button.become:hover {
