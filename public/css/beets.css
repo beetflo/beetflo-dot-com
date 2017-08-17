@@ -260,6 +260,8 @@ section.devices {
 section.devices .heading {
     margin-bottom: 100px;
     margin-top: -20px;
+    font-size: 28px;
+    font-weight: 200;
 }
 
 section.devices .sub {
