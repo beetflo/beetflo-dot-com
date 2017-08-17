@@ -115,6 +115,223 @@ header .links a:hover {
     height: 504px;
 }
 
+.meters {
+    position: relative;
+    top: 50px;
+    left: 26px;
+    width: 190px;
+}
+
+.meters .m {
+    background: #969696;
+    border-radius: 5px;
+    width: 5px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 39px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.meters .active {
+   background: #503889; 
+}
+
+.meters .l {
+    min-height: 100px;
+    top: 100px;
+    left: 0; right: 0; bottom: 0;
+    position: absolute;
+    transform: translateY(1);
+}
+
+.meters .l1 { 
+    z-index: 4;
+    background: #e35ac3;
+    transform: translateY(-10px);
+}
+.meters .l2 {
+    z-index: 3;
+    background: #f07488;
+    transform: translateY(-20px);
+}
+.meters .l3 {
+    z-index: 2;
+    background: #f99430;
+    transform: translateY(-30px);
+}
+.meters .l4 {
+    z-index: 1;
+    background: #f6f966;
+    transform: translateY(-31px);
+}
+
+/******************************************/
+
+@keyframes m1-l1 {
+  0%   { transform: translateY(-3px); }
+  10%  { transform: translateY(-24px); }
+  20%  { transform: translateY(-2px); }
+  30%  { transform: translateY(-20px); }
+  40%  { transform: translateY(-3px); }
+  50%  { transform: translateY(-50px); }
+  60%  { transform: translateY(-24px); }
+  70%  { transform: translateY(-2px); }
+  80%  { transform: translateY(-34px); }
+  90%  { transform: translateY(-14px); }
+  100% { transform: translateY(-40px); }
+}
+
+@keyframes m1-l2 {
+  0%   { transform: translateY(-10px); }
+  10%  { transform: translateY(-48px); }
+  20%  { transform: translateY(-9px); }
+  30%  { transform: translateY(-43px); }
+  40%  { transform: translateY(-15px); }
+  50%  { transform: translateY(-84px); }
+  60%  { transform: translateY(-46px); }
+  70%  { transform: translateY(-7px); }
+  80%  { transform: translateY(-60px); }
+  90%  { transform: translateY(-28px); }
+  100% { transform: translateY(-93px); }
+}
+
+@keyframes m1-l3 {
+  0%   { transform: translateY(-10px); }
+  10%  { transform: translateY(-44px); }
+  20%  { transform: translateY(-7px); }
+  30%  { transform: translateY(-40px); }
+  40%  { transform: translateY(-13px); }
+  50%  { transform: translateY(-80px); }
+  60%  { transform: translateY(-44px); }
+  70%  { transform: translateY(-4px); }
+  80%  { transform: translateY(-54px); }
+  90%  { transform: translateY(-24px); }
+  100% { transform: translateY(-90px); }
+}
+
+@keyframes m1-l4 {
+  0%   { transform: translateY(-10px); }
+  10%  { transform: translateY(-44px); }
+  20%  { transform: translateY(-7px); }
+  30%  { transform: translateY(-40px); }
+  40%  { transform: translateY(-13px); }
+  50%  { transform: translateY(-80px); }
+  60%  { transform: translateY(-44px); }
+  70%  { transform: translateY(-4px); }
+  80%  { transform: translateY(-84px); }
+  90%  { transform: translateY(-24px); }
+  100% { transform: translateY(-90px); }
+}
+
+/******************************************/
+
+
+@keyframes m2-l1 {
+  0%   { transform: translateY(-3px); }
+  10%  { transform: translateY(-24px); }
+  20%  { transform: translateY(-2px); }
+  30%  { transform: translateY(-20px); }
+  40%  { transform: translateY(-3px); }
+  50%  { transform: translateY(-50px); }
+  60%  { transform: translateY(-24px); }
+  70%  { transform: translateY(-2px); }
+  80%  { transform: translateY(-34px); }
+  90%  { transform: translateY(-14px); }
+  100% { transform: translateY(-40px); }
+}
+
+@keyframes m2-l2 {
+  0%   { transform: translateY(-10px); }
+  10%  { transform: translateY(-48px); }
+  20%  { transform: translateY(-9px); }
+  30%  { transform: translateY(-43px); }
+  40%  { transform: translateY(-15px); }
+  50%  { transform: translateY(-84px); }
+  60%  { transform: translateY(-46px); }
+  70%  { transform: translateY(-7px); }
+  80%  { transform: translateY(-60px); }
+  90%  { transform: translateY(-28px); }
+  100% { transform: translateY(-93px); }
+}
+
+@keyframes m2-l3 {
+  0%   { transform: translateY(-10px); }
+  10%  { transform: translateY(-44px); }
+  20%  { transform: translateY(-7px); }
+  30%  { transform: translateY(-40px); }
+  40%  { transform: translateY(-13px); }
+  50%  { transform: translateY(-80px); }
+  60%  { transform: translateY(-44px); }
+  70%  { transform: translateY(-4px); }
+  80%  { transform: translateY(-54px); }
+  90%  { transform: translateY(-24px); }
+  100% { transform: translateY(-90px); }
+}
+
+@keyframes m2-l4 {
+  0%   { transform: translateY(-10px); }
+  10%  { transform: translateY(-44px); }
+  20%  { transform: translateY(-7px); }
+  30%  { transform: translateY(-40px); }
+  40%  { transform: translateY(-13px); }
+  50%  { transform: translateY(-80px); }
+  60%  { transform: translateY(-44px); }
+  70%  { transform: translateY(-4px); }
+  80%  { transform: translateY(-84px); }
+  90%  { transform: translateY(-24px); }
+  100% { transform: translateY(-90px); }
+}
+
+/******************************************/
+.m1 .l1 {
+    animation: 3s infinite alternate m1-l1;
+}
+
+.m1 .l2 {
+    animation: 3s infinite alternate m1-l2;
+}
+
+.m1 .l3 {
+    animation: 3s infinite alternate m1-l3;
+}
+
+.m1 .l4 {
+    animation: 3s infinite alternate m1-l4;
+}
+
+/******************************************/
+
+.m2 .l1 {
+    /*animation: 3s infinite alternate m2-l1;*/
+    animation-delay: 1.5s;
+    transform: none !important;
+}
+
+.m2 .l2 {
+    /*animation: 3s infinite alternate m2-l2;*/
+    animation-delay: 1.5s;
+    transform: none !important;
+}
+
+.m2 .l3 {
+    /*animation: 3s infinite alternate m2-l3;*/
+    animation-delay: 1.5s;
+    transform: none !important;
+}
+
+.m2 .l4 {
+    /*animation: 3s infinite alternate m2-l4;*/
+    animation-delay: 1.5s;
+    transform: none !important;
+}
+
+/******************************************/
+.m2 .l { translateY(-100px) !important; }
+.m3 {}
+.m4 {}
+
 .splash .phone-backer {
     background: url('/public/img/phone_p24.png') no-repeat center;
 }
@@ -278,6 +495,7 @@ section.devices .mini {
     margin-left: -200px;
     margin-bottom: 45px;
     bottom: 0;
+    box-shadow: 3px 3px 0 rgba(255,255,255,0.8);
 }
 
 section.devices span {
